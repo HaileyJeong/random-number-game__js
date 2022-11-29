@@ -10,7 +10,6 @@ function makeRandNum() {
 
 function handleGameResult(event) {
   event.preventDefault();
-
   const userNum = Number(selectNum.value);
   const machineNum = makeRandNum(rangeNum);
   gameSummary.innerText = `You chose: ${userNum}, the machine chose ${machineNum}.`;
